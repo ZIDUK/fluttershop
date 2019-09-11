@@ -53,30 +53,62 @@ class SideBarState extends State<SideBar> {
                         'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c261afbb-1184-467a-afaf-f412e9368190/ddflf9e-19c80715-5ec0-4dc5-b224-0eb6e67d5375.png/v1/fill/w_1280,h_720,strp/the_valshar_by_istrandar_ddflf9e-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYzI2MWFmYmItMTE4NC00NjdhLWFmYWYtZjQxMmU5MzY4MTkwXC9kZGZsZjllLTE5YzgwNzE1LTVlYzAtNGRjNS1iMjI0LTBlYjZlNjdkNTM3NS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IDGScoREoGNGJw3uHefSJABYB-tTx8uUh4X7tQsk8mg'))),
           ),
           ListTile(
-            title: Text('First Page'),
-            trailing: Icon(Icons.arrow_upward),
+            title: Text('Home Page'),
+            trailing: Icon(Icons.home),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
             },
           ),
           ListTile(
-            title: Text('Second Page'),
-            trailing: Icon(Icons.arrow_right),
+            title: Text('My Account'),
+            trailing: Icon(Icons.person),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
             },
           ),
           ListTile(
-            title: Text('Second Page'),
-            trailing: Icon(Icons.arrow_left),
+            title: Text('My Orders'),
+            trailing: Icon(Icons.shopping_basket),
+            onTap: (){
+              Navigator.push(context,
+               MaterialPageRoute(builder: (context) => Home()));
+            },
+          ),
+          ListTile(
+            title: Text('Categories'),
+            trailing: Icon(Icons.dashboard),
+            onTap: (){
+              Navigator.push(context,
+               MaterialPageRoute(builder: (context) => Home()));
+            },
+          ),
+          ListTile(
+            title: Text('Favorites'),
+            trailing: Icon(Icons.favorite),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
             },
           ),
           Divider(),
+          ListTile(
+            title: Text('Settings'),
+            trailing: Icon(Icons.settings),
+            onTap: (){
+              Navigator.push(context,
+               MaterialPageRoute(builder: (context) => Home()));
+            },
+          ),
+          ListTile(
+            title: Text('About'),
+            trailing: Icon(Icons.help, color: Colors.blue,),
+            onTap: (){
+              Navigator.push(context,
+               MaterialPageRoute(builder: (context) => Home()));
+            },
+          ),
           ListTile(
             title: Text('Close'),
             trailing: Icon(Icons.cancel),
