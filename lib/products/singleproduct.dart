@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttershopjt/pages/product_details.dart';
+import '../pages/product_details.dart';
 
 class SingleProduct extends StatelessWidget {
   final product_name;
@@ -21,9 +23,14 @@ class SingleProduct extends StatelessWidget {
           tag: product_name, 
           child: Material(
             child: InkWell(
-              onTap: (){
+              onTap: ()=>Navigator.push(context,
+               MaterialPageRoute(builder: (context) => ProductDetails(
+                product_detail_name: product_name,
+                product_detail_new_price: prod_price,
+                product_detail_old: prod_old_price,
+                product_detail_picture: prod_picture,
 
-              },
+               ))),
               child: GridTile(
                 footer: Container(
                   color: Colors.white,
