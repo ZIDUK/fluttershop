@@ -20,7 +20,7 @@ class SingleProduct extends StatelessWidget {
     return Container(
       child: Card(
         child: Hero(
-          tag: product_name, 
+          tag: Text("Hero 1"), 
           child: Material(
             child: InkWell(
               onTap: ()=>Navigator.push(context,
@@ -34,25 +34,14 @@ class SingleProduct extends StatelessWidget {
               child: GridTile(
                 footer: Container(
                   color: Colors.white,
-                  child: ListTile(
-                    leading: Text(
-                      product_name, 
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Text(product_name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                       ),
-                      title: Text(
-                        "\$$prod_price", 
-                        style: TextStyle(
-                          color:Colors.red,
-                          fontWeight: FontWeight.w800,
-                          )),
-                          subtitle: Text(
-                        "\$$prod_old_price", 
-                        style: TextStyle(
-                          color:Colors.black54,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.lineThrough
-                          )),
-                  ),
+                      Text("\$${prod_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
+                    ],
+                  ) ,
                 ),
                 child: Image.asset(prod_picture,
                 fit: BoxFit.cover) ,

@@ -24,6 +24,9 @@ class _CarouselJTState extends State<CarouselJT> {
         ],
         
         autoplay: this.play,
+        dotSize: 4.0,
+        indicatorBgPadding: 2.0,
+        dotBgColor: Colors.transparent,
         animationCurve: Curves.fastOutSlowIn,
         animationDuration: Duration(milliseconds: 1000),
       ),

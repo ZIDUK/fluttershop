@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttershopjt/pages/cart.dart';
+import '../pages/cart.dart';
 
 class ShoppingCart extends StatelessWidget {
   @override
@@ -8,7 +10,9 @@ class ShoppingCart extends StatelessWidget {
         Icons.shopping_cart,
         color: Colors.white,
       ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+      },
     );
   }
 }

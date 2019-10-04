@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:fluttershopjt/products/singleproduct.dart';
+import '../products/singleproduct.dart';
 
-class Products extends StatefulWidget { 
-
-  _ProductsState createState() => _ProductsState();
+class SimilarProducts extends StatefulWidget {
+  @override
+  _SimilarProductsState createState() => _SimilarProductsState();
 }
 
-class _ProductsState extends State<Products> {
+class _SimilarProductsState extends State<SimilarProducts> {
   var product_List = [
     {
       "name": "Pulsera Santos",

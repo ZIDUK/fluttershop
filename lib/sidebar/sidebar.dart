@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../home/home.dart';
+import '../pages/cart.dart';
 //import '../screen2/screen2.dart';
 //import './screen1.dart';
 //import '../screen3/screen3.dart'; 
@@ -54,7 +55,7 @@ class SideBarState extends State<SideBar> {
           ),
           ListTile(
             title: Text('Home Page'),
-            trailing: Icon(Icons.home),
+            trailing: Icon(Icons.home, color: Colors.red,),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
@@ -62,7 +63,7 @@ class SideBarState extends State<SideBar> {
           ),
           ListTile(
             title: Text('My Account'),
-            trailing: Icon(Icons.person),
+            trailing: Icon(Icons.person, color: Colors.red,),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
@@ -70,23 +71,23 @@ class SideBarState extends State<SideBar> {
           ),
           ListTile(
             title: Text('My Orders'),
-            trailing: Icon(Icons.shopping_basket),
+            trailing: Icon(Icons.shopping_basket, color: Colors.red,),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
             },
           ),
           ListTile(
-            title: Text('Categories'),
-            trailing: Icon(Icons.dashboard),
+            title: Text('Shopping Cart'),
+            trailing: Icon(Icons.shopping_cart, color: Colors.red,),
             onTap: (){
               Navigator.push(context,
-               MaterialPageRoute(builder: (context) => Home()));
+               MaterialPageRoute(builder: (context) => Cart()));
             },
           ),
           ListTile(
             title: Text('Favorites'),
-            trailing: Icon(Icons.favorite),
+            trailing: Icon(Icons.favorite, color: Colors.red,),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
@@ -95,7 +96,7 @@ class SideBarState extends State<SideBar> {
           Divider(),
           ListTile(
             title: Text('Settings'),
-            trailing: Icon(Icons.settings),
+            trailing: Icon(Icons.settings, color: Colors.red,),
             onTap: (){
               Navigator.push(context,
                MaterialPageRoute(builder: (context) => Home()));
